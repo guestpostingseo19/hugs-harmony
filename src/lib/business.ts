@@ -9,10 +9,10 @@ export const business = {
     plusCode: "GMJQ+2X Chichawatni",
   },
   phones: [
-    { label: "Primary", number: "+923115877687", display: "+92 311 5877687" },
-    { label: "Secondary", number: "+923222221258", display: "+92 322 2221258" },
+    { label: "Primary", number: "+923222221258", display: "+92 322 2221258" },
+    { label: "Secondary", number: "+923115877687", display: "+92 311 5877687" },
   ],
-  whatsapp: "+923222221258",
+  whatsapp: "+923115877687",
   rating: 5.0,
   reviewCount: 18,
   mapEmbed:
