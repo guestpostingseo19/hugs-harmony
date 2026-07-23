@@ -38,7 +38,7 @@ export function Footer() {
           <h4 className="text-xs uppercase tracking-[0.28em] text-gold/80">Explore</h4>
           <ul className="mt-5 space-y-3 text-sm text-cream/80">
             <li><Link to="/" className="hover:text-gold transition">Home</Link></li>
-            <li><Link to="/menu" className="hover:text-gold transition">Collections</Link></li>
+            <li><Link to="/collections" className="hover:text-gold transition">Collections</Link></li>
             <li><Link to="/about" className="hover:text-gold transition">About Us</Link></li>
             <li><Link to="/visit" className="hover:text-gold transition">Visit Us</Link></li>
           </ul>
