@@ -32,8 +32,10 @@ export function Nav() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-background/85 backdrop-blur-xl border-b border-border/60 py-3 text-foreground"
-          : "bg-transparent py-5 text-cream"
+          ? "bg-background/90 backdrop-blur-xl border-b border-border/60 py-3 text-foreground shadow-[0_1px_0_0_var(--color-border)]"
+          : light
+            ? "bg-gradient-to-b from-ink/60 via-ink/25 to-transparent py-5 text-cream"
+            : "bg-background/80 backdrop-blur-md border-b border-border/40 py-4 text-foreground"
       }`}
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-5 sm:px-8">
