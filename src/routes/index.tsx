@@ -151,7 +151,7 @@ function Home() {
                   Curated for the moments that matter.
                 </h2>
               </div>
-              <Link to="/menu" className="group inline-flex items-center gap-2 text-sm tracking-wider uppercase text-foreground">
+              <Link to="/collections" className="group inline-flex items-center gap-2 text-sm tracking-wider uppercase text-foreground">
                 Explore all
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </Link>
@@ -161,7 +161,7 @@ function Home() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((c, i) => (
               <Reveal key={c.name} delay={i * 0.08}>
-                <Link to="/menu" className="group relative block overflow-hidden rounded-2xl bg-muted">
+                <Link to="/collections" className="group relative block overflow-hidden rounded-2xl bg-muted">
                   <div className="aspect-[3/4] w-full overflow-hidden">
                     <img
                       src={c.img}

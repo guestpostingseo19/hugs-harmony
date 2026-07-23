@@ -10,7 +10,7 @@ import storefrontDay from "@/assets/storefront-day.asset.json";
 import storefrontNight from "@/assets/storefront-night.asset.json";
 import interiorFounder from "@/assets/interior-founder.asset.json";
 
-export const Route = createFileRoute("/menu")({
+export const Route = createFileRoute("/collections")({
   head: () => ({
     meta: [
       { title: "Collections — Ruby Jewellers, Chichawatni" },
@@ -19,9 +19,9 @@ export const Route = createFileRoute("/menu")({
       { property: "og:description", content: "Bridal, gold, and bespoke jewellery collections in Chichawatni." },
       { property: "og:image", content: interiorWide.url },
       { name: "twitter:image", content: interiorWide.url },
-      { property: "og:url", content: "/menu" },
+      { property: "og:url", content: "/collections" },
     ],
-    links: [{ rel: "canonical", href: "/menu" }],
+    links: [{ rel: "canonical", href: "/collections" }],
   }),
   component: MenuPage,
 });

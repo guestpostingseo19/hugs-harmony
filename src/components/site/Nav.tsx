@@ -6,7 +6,7 @@ import { business, telLink } from "@/lib/business";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/menu", label: "Collections" },
+  { to: "/collections", label: "Collections" },
   { to: "/about", label: "About" },
   { to: "/visit", label: "Visit Us" },
 ] as const;
