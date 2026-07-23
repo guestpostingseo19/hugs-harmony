@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import logo from "@/assets/logo.asset.json";
@@ -14,6 +14,7 @@ const links = [
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -22,7 +23,10 @@ export function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const light = !scrolled; // over dark hero — use light text
+  // Only the home page has a dark full-bleed hero at the top.
+  // Other pages have light backgrounds, so the nav must always use dark text there.
+  const overHero = pathname === "/" && !scrolled;
+  const light = overHero;
 
   return (
     <header
